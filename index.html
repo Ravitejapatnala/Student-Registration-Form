@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register students and manage their details with ease.">
+    <meta name="keywords" content="student,registration,form, management">
+    <meta name="author" content="Ravi Teja Patnala">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- header section -->
+    <header class="header">
+        <h1>Student Registration Form</h1>
+        <p>Streamline your student registration process with an easy-to-use form and management system.</p>
+    </header>
+
+    <!-- form section -->
+    <section class="form-container">
+        <form class="form">
+            <label for="student_name">Student Name:</label>
+            <input id="student_name" type="text" name="name" required placeholder="Enter student name...">
+            <br/>
+            <label for="student_id">Student Id:</label>
+            <input id="student_id" type="number" name="id" required placeholder="Enter student id...">
+            <br/>
+            <label for="student_email">Student Email:</label>
+            <input id="student_email" type="email" name="email" required placeholder="Enter student email...">
+            <br/>
+            <label for="student_mobile">Student Contact:</label>
+            <input id="student_mobile" type="tel" name="contact" required placeholder="Enter student contact...">
+            <br/>
+            <button class="register" type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- display section -->
+    <section class="table-container">
+        <h1>Registered Students</h1>
+        <table border="1px solid black">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="table_body">
+                <!-- All the fields are added dynamically. Please refer index.js file for the code. -->
+            </tbody>
+         </table>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
